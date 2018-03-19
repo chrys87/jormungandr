@@ -2,6 +2,9 @@
 
 import imp, os, sys
 
+
+""" Access settings for the screen reader using settings.parameter e.g. settings.speechRate"""
+
 # Read settings file
 
 def read_settings(settingsFile):
