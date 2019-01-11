@@ -1,6 +1,24 @@
 # jormungandr
-Modern Linux desktop screen reader
+Modern Linux desktop screen reader using client server architecture and a based plugin system.
+This makes it powerfull and flexible.
 
+# requirements:
+buildsystem:
+- meson
+- ninja
+Core:
+- boost
+
+# build
+You can build the screenreader like the following
+
+mkdir build # create a build folder
+meson . build # create the build structure (syntax: meson <source folder> <destination folder>)
+cd build # enter the build folder
+ninja # compile it
+
+
+# protocoll
 Communication between the components:
 REST is using JSON. so this might be a good idea. Its slim and fast.
 
