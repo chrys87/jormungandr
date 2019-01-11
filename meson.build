@@ -13,4 +13,5 @@ boost_dep = [
 ]
 
 node_lib = shared_library('node', 'src/node/node.cpp')
+
 speech_generic = executable('generic', 'src/speech/generic/generic.cpp', dependencies : [boost_dep], link_with: [node_lib])
