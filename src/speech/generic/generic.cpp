@@ -1,3 +1,5 @@
+#include "generic.h"
+#include "../../node/node.h"
 #include <boost/locale.hpp>
 #include <iostream>
 
@@ -7,6 +9,7 @@ int main()
 {
     using namespace boost::locale;
     using namespace std;
+    Node n = Node();
     generator gen;
     locale loc=gen(""); 
     // Create system default locale
@@ -28,5 +31,6 @@ int main()
     cout<<"This is lower case "<<to_lower("Hello World!")<<endl;
     cout<<"This is title case "<<to_title("Hello World!")<<endl;
     cout<<"This is fold case "<<fold_case("Hello World!")<<endl;
+    n.printI();
    
 }
