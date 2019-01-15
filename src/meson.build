@@ -1,1 +1,1 @@
-subdir('speech')
+subdir('output')
