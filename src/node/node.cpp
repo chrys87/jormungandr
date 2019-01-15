@@ -10,7 +10,6 @@
     using std::string;
 
     Node::Node(string host, short port): host_(host), port_(port), io_service_(), socket_(io_service_){}
-    Node::Node() : Node("127.0.0.1", 22447) {}
     Node::~Node() {
         disconnect();
     }
