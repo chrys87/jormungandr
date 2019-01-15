@@ -16,7 +16,8 @@ class Node {
     
     public:
         Node(std::string host, short port);
-        Node();
+        Node::Node() : Node("127.0.0.1", 22447) {}
+
         virtual ~Node();
 
         // Connect to the remote machine
