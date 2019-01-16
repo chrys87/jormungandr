@@ -10,14 +10,14 @@ int main()
 {
     using namespace boost::locale;
     using namespace std;
-    Node n = Node();
-    //Node n = Node("127.0.0.1", 22447);
-    n.connect();
+    //Node n = Node();
+    Node* n = new Node("127.0.0.1", 22447);
+    n->connect();
     string lineOut;
     string lineIn;    
     cin >> lineIn;
-    n.sendLine(lineIn);
-    n.getLine(lineOut);
+    n->sendLine(lineIn);
+    n->getLine(lineOut);
     cout << "echo: " << lineOut << endl;
     
 }
