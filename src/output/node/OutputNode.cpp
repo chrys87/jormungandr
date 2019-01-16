@@ -19,5 +19,6 @@ int main()
     n->sendLine(lineIn);
     n->getLine(lineOut);
     cout << "echo: " << lineOut << endl;
+    n->disconnect();
     
 }
