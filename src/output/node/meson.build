@@ -1,12 +1,12 @@
 compiler = meson.get_compiler('cpp')
-boost_dep = [
-    compiler.find_library('boost_system'),
-    compiler.find_library('boost_filesystem'),
-    compiler.find_library('boost_locale'),
-    compiler.find_library('boost_thread'),
-]
+#boost_dep = [
+#    compiler.find_library('boost_system'),
+#    compiler.find_library('boost_filesystem'),
+#    compiler.find_library('boost_locale'),
+#    compiler.find_library('boost_thread'),
+#]
 
-
+boost_dep = dependency('boost', modules : ['thread', 'filesystem', 'system'])
 thread_dep = dependency('threads')
 
 # seems to be needed as hack
